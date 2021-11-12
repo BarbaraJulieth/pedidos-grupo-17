@@ -20,7 +20,7 @@ export class Pedidos extends Entity {
     type: 'number',
     required: true,
   })
-  cantidad: string;
+  cantidad: number;
 
   @property({
     type: 'number',
