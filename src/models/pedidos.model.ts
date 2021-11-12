@@ -1,4 +1,4 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {belongsTo, Entity, model, property} from '@loopback/repository';
 import {Persona} from './persona.model';
 
 @model()
@@ -20,7 +20,7 @@ export class Pedidos extends Entity {
     type: 'number',
     required: true,
   })
-  cantidad: number;
+  cantidad: string;
 
   @property({
     type: 'number',
